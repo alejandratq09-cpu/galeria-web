@@ -1,0 +1,132 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.app-container h1 {
+  margin-bottom: 10px;
+}
+
+/* Estilos del Filtro */
+.filtro-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.filtro-label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.filtro-select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Contador */
+.contador {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Cuadrícula (Grid) */
+.galeria-grid {
+  display: grid;
+  /* 1 columna en móvil, 2 en tablet, 4+ en escritorio automáticamente */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Recorta la imagen sin deformarla */
+  display: block;
+}
+
+.tarjeta h3 {
+  margin: 0;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  text-transform: capitalize; /* Primera letra en mayúscula */
+  border-top: 1px solid #eee;
+}
+
+/* Botón Traer 5 */
+.btn-traer {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  transition: background-color 0.3s;
+}
+
+.btn-traer:hover:not(:disabled) {
+  background-color: #535bf2;
+}
+
+.btn-traer:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+/* Mensajes de Carga y Error */
+.mensaje-carga {
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.mensaje-error {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.btn-reintentar {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-reintentar:hover {
+  background-color: #990000;
+}
